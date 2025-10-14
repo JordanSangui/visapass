@@ -12,4 +12,5 @@
 - [x] Edit app/models/event.ts: Import 'compose' from '@adonisjs/core/helpers'
 - [x] Edit start/events.ts: No changes needed after defining EventsList
 - [x] Run npm run build to verify fixes
+- [x] Create vercel.json to configure output directory
 - [ ] Redeploy to Vercel if successful
