@@ -1,0 +1,76 @@
+@layout.app({ title: "Register" })
+@slot('meta')
+<meta name="description" content="A welcome page made with EdgeJS">
+@endslot
+
+@slot('main')
+
+
+<!-- Start Pricing Horizontal Section -->
+<section class="bg-light pt-sm-0 py-5">
+  <div class="container py-5">
+
+    <!-- Start Pricing Horizontal -->
+    <div class="card shadow-lg rounded-4 row col-6 m-auto d-flex">
+      <div class="card-body p-5">
+        <h1 class="h2 semi-bold-600 text-center typo-space-line-center pb-5">Register</h1>
+        <form action="/" method="get">
+          {{ csrfField() }}
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="nom" class="form-label">First name</label>
+              <input type="text" class="form-control" id="nom" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="prenom" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="prenom" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="tel" class="form-label">Phone</label>
+            <input type="tel" class="form-control" id="tel" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="pays" class="form-label">Country</label>
+            <select class="form-select" id="pays" required>
+              <option value="">Select your country</option>
+              <option value="France">France</option>
+              <option value="Belgique">Belgique</option>
+              <option value="Suisse">Suisse</option>
+              <option value="Canada">Canada</option>
+              <option value="Cameroun">Cameroun</option>
+              <option value="Sénégal">Sénégal</option>
+              <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+              <option value="Autre">Autre</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" required>
+          </div>
+          <div class="mb-3">
+            <label for="confirmPassword" class="form-label">Confirm password</label>
+            <input type="password" class="form-control" id="confirmPassword" required>
+          </div>
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-primary btn-lg rounded-3">Sign up</button>
+          </div>
+        </form>
+        <div class="text-center mt-4">
+          <small>Already registered? <a href="{{ route('app.signin') }}">Sign in </a></small>
+        </div>
+      </div>
+    </div>
+    <!-- End Pricing Horizontal -->
+
+  </div>
+</section>
+<!--End Pricing Horizontal Section-->
+
+
+@endslot
+@end

@@ -1,0 +1,44 @@
+@layout.app({ title: "Login" })
+@slot('meta')
+<meta name="description" content="A welcome page made with EdgeJS">
+@endslot
+
+@slot('main')
+
+
+<!-- Start Pricing Horizontal Section -->
+<section class="bg-light pt-sm-0 py-5">
+  <div class="container py-5">
+
+    <!-- Start Pricing Horizontal -->
+    <div class="card shadow-lg rounded-4 row col-6 m-auto d-flex">
+      <div class="card-body p-5">
+        <h1 class="h2 semi-bold-600 text-center typo-space-line-center pb-5">Login</h1>
+        <form action="/" method="get">
+          {{ csrfField() }}
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" required>
+          </div>
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-primary btn-lg rounded-3">Sign in</button>
+          </div>
+        </form>
+        <div class="text-center mt-4">
+          <small>Don't have an account yet? <a href="{{ route('app.signup') }}">Sign up </a></small>
+        </div>
+      </div>
+    </div>
+    <!-- End Pricing Horizontal -->
+
+  </div>
+</section>
+<!--End Pricing Horizontal Section-->
+
+
+@endslot
+@end

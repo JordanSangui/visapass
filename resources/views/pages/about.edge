@@ -1,0 +1,114 @@
+@layout.app({ title: "About" })
+@slot('meta')
+<meta name="description" content="A welcome page made with EdgeJS">
+@endslot
+
+@slot('main')
+
+
+<!-- Start Banner Hero -->
+<section class="bg-light w-100">
+  <div class="container">
+    <div class="row d-flex align-items-center py-5">
+      <div class="col-lg-6 text-start">
+        <h1 class="h2 py-5 text-primary typo-space-line">About Us</h1>
+        <p class="light-300">
+          We are a travel agency specializing in supporting students, professionals, and travelers seeking new
+          opportunities abroad.
+          Whether you want to pursue your studies, grow your career, or simply explore the world, VisaPASS is here to
+          make your project a reality.
+        </p>
+      </div>
+      <div class="col-lg-6">
+        <img src="{{ asset('resources/images/banner-img-02.svg') }}">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Banner Hero -->
+
+
+<!-- Start Choice -->
+<section class="why-us banner-bg bg-light">
+  <div class="container my-4">
+    <div class="row">
+      <div class="banner-img col-lg-5">
+        <img src="{{ asset('resources/images/work.svg') }}" class="rounded img-fluid" alt="">
+      </div>
+      <div class="banner-content col-lg-7 align-self-end">
+        <h2 class="h2 pb-3">Why you choose us?</h2>
+        <p class="text-muted pb-5 light-300">
+          Our mission is to make your journey easier: visa assistance, destination guidance, flight booking,
+          accommodation, and personalized advice.
+          Thanks to our experience and network of partners, we offer reliable, fast, and tailor-made services.
+
+          With VisaPASS, open the doors to your future with confidence!</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Choice -->
+
+<!-- Start Aim -->
+<section class="banner-bg bg-white py-5">
+  <div class="container my-4">
+    <div class="row text-center">
+
+      <div class="objective col-lg-4">
+        <div class="objective-icon card m-auto py-4 mb-2 mb-sm-4 bg-secondary shadow-lg">
+          <i class="display-4 bx bxs-bulb text-light"></i>
+        </div>
+        <h2 class="objective-heading h3 mb-2 mb-sm-4 light-300">Our Vision</h2>
+        <p class="light-300">
+          At VisaPASS, we envision a world where everyone can easily access international opportunities for education, work, and exploration, regardless of their background.
+        </p>
+      </div>
+
+      <div class="objective col-lg-4 mt-sm-0 mt-4">
+        <div class="objective-icon card m-auto py-4 mb-2 mb-sm-4 bg-secondary shadow-lg">
+          <i class='display-4 bx bx-revision text-light'></i>
+        </div>
+        <h2 class="objective-heading h3 mb-2 mb-sm-4 light-300">Our Mission</h2>
+        <p class="light-300">
+          Our mission is to guide and support individuals at every step of their journey abroad from obtaining visas to settling in a new country by providing trusted, personalized, and efficient services.
+        </p>
+      </div>
+
+      <div class="objective col-lg-4 mt-sm-0 mt-4">
+        <div class="objective-icon card m-auto py-4 mb-2 mb-sm-4 bg-secondary shadow-lg">
+          <i class="display-4 bx bxs-select-multiple text-light"></i>
+        </div>
+        <h2 class="objective-heading h3 mb-2 mb-sm-4 light-300">Our Goal</h2>
+        <p class="light-300">
+          Our main objective is to simplify international mobility by offering comprehensive solutions that help our clients achieve their dreams of studying, working, or traveling abroad with complete peace of mind.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- End Aim -->
+
+<!-- Start Contact -->
+<section class="banner-bg bg-light py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mx-auto my-4 p-3">
+        <form action="#" method="get">
+          <h1 class="h2 text-center">Stay up to date with us</h1>
+          <div class="input-group py-3">
+
+            <input name="email" type="text" class="form-control form-control-lg rounded-pill rounded-end" id="email"
+              placeholder="Your Email" aria-label="Your Email">
+            <button class="btn btn-secondary text-white btn-lg rounded-pill rounded-start px-lg-4"
+              type="submit">Subsribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Contact -->
+
+@endslot
+@end

@@ -1,0 +1,65 @@
+@layout.app({ title: "Blog" })
+@slot('meta')
+<meta name="description" content="A welcome page made with EdgeJS">
+@endslot
+
+@slot('main')
+
+<!-- Start Banner Hero -->
+<section class="bg-light">
+  <div class="container pt-3">
+    <div class="row pt-2">
+      <div class="contact-header col-lg-12 col-sm-12">
+        <h1 class="h2 pb-3 text-primary  text-center typo-space-line-center">Our articles</h1>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Banner Hero -->
+
+<!-- Start Service -->
+<section class="service-wrapper py-3">
+  <div class="service-tag py-3 bg-secondary">
+    <div class="col-md-12">
+      <ul class="nav d-flex justify-content-center">
+        <li class="nav-item mx-lg-4">
+          <a class="filter-btn nav-link btn-outline-primary active shadow rounded-pill text-light px-4 light-300"
+            href="#" data-filter=".project">All</a>
+        </li>
+        @each(category in categories)
+        <li class="nav-item mx-lg-4">
+          <a class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300" href="#"
+            data-filter=".p{{category}}">{{category}}</a>
+        </li>
+        @end
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="container overflow-hidden py-5">
+  <div class="row gx-5 gx-sm-3 gx-lg-5 gy-lg-5 gy-3 pb-3 projects">
+
+    @each(article in articles)
+    <!-- Start Recent Work -->
+    <div class="col-xl-3 col-md-4 col-sm-6 project p{{article.category}}">
+      <a href="{{ route('app.articles', [article.id]) }}"
+        class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+        <img class="service card-img" src="{{ asset('resources/images/'  + article.image) }}" alt="Card image">
+        <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+          <div class="service-work-content text-left text-light">
+            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">{{article.title}}</span>
+            <p class="card-text">{{article.content}}</p>
+          </div>
+        </div>
+      </a>
+    </div><!-- End Recent Work -->
+    @end
+
+
+  </div>
+</section>
+<!-- End Service -->
+
+@endslot
+@end

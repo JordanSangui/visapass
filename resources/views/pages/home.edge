@@ -1,0 +1,254 @@
+@layout.app({ title: "Home" })
+@slot('meta')
+<meta name="description" content="A welcome page made with EdgeJS">
+@endslot
+
+@slot('main')
+
+<!-- Start Banner Hero -->
+<div class="banner-wrapper bg-light">
+  <div id="index_banner" class="banner-vertical-center-index container-fluid pt-5">
+
+    <!-- Start slider -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+
+          <div class="py-5 row d-flex align-items-center">
+            <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
+              <h1 class="banner-heading h1 text-secondary display-3 mb-0 pb-5 mx-0 px-0 light-300 typo-space-line">
+                Your Gateway to <strong>Studying</strong> <br>Abroad
+              </h1>
+              <p class="banner-body text-muted py-3 mx-0 px-0">
+                Take the first step toward your educational adventure with VisaPASS. We guide you through every step of
+                the process, from visa application to accommodation, ensuring a seamless experience as you pursue your
+                studies abroad.
+              </p>
+              <a class="banner-button btn rounded-pill btn-outline-primary btn-lg px-4" href="{{ route('app.services') }}" role="button">Get
+                Started</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="carousel-item">
+
+          <div class="py-5 row d-flex align-items-center">
+            <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
+              <h1 class="banner-heading h1 text-secondary display-3 mb-0 pb-3 mx-0 px-0 light-300">
+                Seamless Work and Career Opportunities Worldwide
+              </h1>
+              <p class="banner-body text-muted py-3">
+                Looking to advance your career internationally? Let us assist you in securing the right visa, job placements, and relocation services to ensure your professional journey abroad is a success. We help you unlock global opportunities.
+              </p>
+              <a class="banner-button btn rounded-pill btn-outline-primary btn-lg px-4" href="{{ route('app.services') }}" role="button">Get
+                Started</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="carousel-item">
+
+          <div class="py-5 row d-flex align-items-center">
+            <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
+              <h1 class="banner-heading h1 text-secondary display-3 mb-0 pb-3 mx-0 px-0 light-300">
+                Explore the World with Confidence
+              </h1>
+              <p class="banner-body text-muted py-3">
+                Whether it’s a vacation, business trip, or cultural exploration, VisaPASS takes care of all your travel needs. From booking flights to providing travel insurance, we make sure your international adventures are stress-free and unforgettable.
+              </p>
+              <a class="banner-button btn rounded-pill btn-outline-primary btn-lg px-4" href="{{ route('app.services') }}" role="button">Get
+                Started</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <a class="carousel-control-prev text-decoration-none" href="#carouselExampleIndicators" role="button"
+        data-bs-slide="prev">
+        <i class='bx bx-chevron-left'></i>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next text-decoration-none" href="#carouselExampleIndicators" role="button"
+        data-bs-slide="next">
+        <i class='bx bx-chevron-right'></i>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+    <!-- End slider -->
+
+  </div>
+</div>
+<!-- End Banner Hero -->
+
+<!-- Start Progress -->
+<section class="bg-white py-5">
+  <div class="container my-4">
+
+    <h1 class="creative-heading h2 pb-3">Why Choose VisaPASS?</h1>
+
+    <div class="creative-content row py-3">
+      <div class="col-md-5">
+        <p class="text-muted col-lg-8 light-300">At VisaPASS, we offer expert guidance, efficient service, and tailored solutions to ensure your international journey is smooth, timely, and perfectly suited to your needs. </p>
+      </div>
+      <div class="creative-progress col-md-7">
+
+        <div class="row mt-4 mt-sm-2">
+          <div class="col-6">
+            <h4 class="h5">Expertise</h4>
+          </div>
+          <div class="col-6 text-right">95%</div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 66%" aria-valuenow="66" aria-valuemin="0"
+            aria-valuemax="100"></div>
+        </div>
+
+        <div class="row mt-4 mt-sm-2">
+          <div class="col-6">
+            <h4 class="h5">Efficiency</h4>
+          </div>
+          <div class="col-6 text-right">99%</div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+            aria-valuemax="100"></div>
+        </div>
+
+
+        <div class="row mt-4 mt-sm-2">
+          <div class="col-6">
+            <h4 class="h5">Customization</h4>
+          </div>
+          <div class="col-6 text-right">94%</div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 74%" aria-valuenow="74" aria-valuemin="0"
+            aria-valuemax="100"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Progress -->
+
+<section class="container py-5">
+
+  <p class="text-center pb-5 light-300">
+    At VisaPASS, we offer a range of expert services designed to make your journey abroad seamless, from visa assistance to flight bookings and everything in between
+  </p>
+
+  <div class="row d-flex align-items-center pb-5">
+
+    <div class="col-lg-6 offset-lg-0 col-md-8 offset-md-2">
+      <img class="rounded float-right" src="{{ asset('resources/images/pricing.svg') }}">
+    </div>
+
+    <div class="col-lg-6">
+
+      <!-- Start Pricing List -->
+      <div class="pricing-list shadow-sm rounded-top rounded-3 py-sm-0 py-5">
+        <div class="row p-2">
+          <div class="pricing-list-icon col-3 text-center m-auto text-secondary ml-5 py-2">
+            <i class="display-3 bx bx-package"></i>
+          </div>
+          <div class="pricing-list-body col-md-8 align-items-center pl-3 pt-2">
+            <ul class="list-unstyled text-center light-300">
+              <li class="h5 semi-bold-600 mb-0 mt-3">Visa Assistance</li>
+              <li>Find secure, affordable housing tailored to your needs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Pricing List -->
+
+      <!-- Start Pricing List -->
+      <div class="pricing-list shadow-sm py-sm-0 py-5">
+        <div class="row p-2">
+          <div class="pricing-list-icon col-3 text-center m-auto text-secondary ml-5 py-2">
+            <i class="display-3 bx bx-package"></i>
+          </div>
+          <div class="pricing-list-body col-md-8 align-items-center pl-3 pt-2">
+            <ul class="list-unstyled text-center light-300">
+              <li class="h5 semi-bold-600 mb-0 mt-3">Accommodation Search</li>
+              <li>Efficient and affordable flight ticket booking.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Pricing List -->
+
+      <!-- Start Pricing List -->
+      <div class="pricing-list shadow-sm rounded-botton rounded-3 py-sm-0 py-5">
+        <div class="row p-2">
+          <div class="pricing-list-icon col-sm-3 text-center m-auto text-secondary ml-5 py-2">
+            <i class="display-3 bx bx-package"></i>
+          </div>
+          <div class="pricing-list-body col-md-8 align-items-center pl-3 pt-2">
+            <ul class="list-unstyled text-center light-300">
+              <li class="h5 semi-bold-600 mb-0 mt-3">Travel Insurance</li>
+              <li>Comprehensive coverage for peace of mind during travel.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Pricing List -->
+
+      <!-- Start Pricing List -->
+      <div class="pricing-list shadow-sm rounded-botton rounded-3 py-sm-0 py-5">
+        <div class="row p-2">
+          <div class="pricing-list-icon col-sm-3 text-center m-auto text-secondary ml-5 py-2">
+            <i class="display-3 bx bx-package"></i>
+          </div>
+          <div class="pricing-list-body col-md-8 align-items-center pl-3 pt-2">
+            <ul class="list-unstyled text-center light-300">
+              <li class="h5 semi-bold-600 mb-0 mt-3">Appeals</li>
+              <li>Support for visa refusal appeals and reapplications.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Pricing List -->
+    </div>
+  </div>
+</section>
+
+<!-- Start Our Partner -->
+<section class="bg-dark py-3">
+  <div class="container py-5">
+    <h2 class="h2 text-white text-center py-5">Our Partners</h2>
+    <div class="row text-center">
+      <div class="col-md-3 mb-3">
+        <div class="card partner-wap py-5">
+          <a href="#"><i class='display-1 text-white bx bxs-buildings'></i></a>
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <div class="card partner-wap py-5">
+          <a href="#"><i class='display-1 bx text-white bxs-check-shield bx-lg'></i></a>
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <div class="card partner-wap py-5">
+          <a href="#"><i class='display-1 text-white bx bxs-bolt-circle'></i></a>
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <div class="card partner-wap py-5">
+          <a href="#"><i class='display-1 text-white bx bxs-spa'></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><br>
+<!--End Our Partner-->
+
+
+
+@endslot
+@end
