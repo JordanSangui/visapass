@@ -10,7 +10,13 @@ export default defineConfig({
   | will be scanned automatically from the "./commands" directory.
   |
   */
-  commands: [() => import('@adonisjs/core/commands'), () => import('@adonisjs/mail/commands'), () => import('@adonisjs/cache/commands'), () => import('@adonisjs/lucid/commands'), () => import('@adonisjs/bouncer/commands')],
+  commands: [
+    () => import('@adonisjs/core/commands'),
+    () => import('@adonisjs/mail/commands'),
+    () => import('@adonisjs/cache/commands'),
+    () => import('@adonisjs/lucid/commands'),
+    () => import('@adonisjs/bouncer/commands'),
+  ],
 
   /*
   |--------------------------------------------------------------------------
@@ -50,7 +56,11 @@ export default defineConfig({
   | List of modules to import before starting the application.
   |
   */
-  preloads: [() => import('#start/routes'), () => import('#start/kernel'), () => import('#start/events')],
+  preloads: [
+    () => import('#start/routes'),
+    () => import('#start/kernel'),
+    () => import('#start/events'),
+  ],
 
   /*
   |--------------------------------------------------------------------------
@@ -89,13 +99,11 @@ export default defineConfig({
     {
       pattern: 'resources/lang/**/*.{json,yaml,yml}',
       reloadServer: false,
-    }
+    },
   ],
 
   assetsBundler: false,
   hooks: {
     onBuildStarting: [() => import('@adonisjs/vite/build_hook')],
   },
-  assetsBundler: false,
-  assetsBundler: false
 })

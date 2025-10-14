@@ -1,8 +1,7 @@
 import transmit from '@adonisjs/transmit/services/main'
-import User from '#models/customer'
 
 export default class Notification {
-  handle(user: User) {
+  handle(user: { id: number }) {
     // Send notification
     transmit.broadcast(`users/${user.id}`, { message: 'Hello' })
   }

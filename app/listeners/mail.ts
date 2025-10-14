@@ -1,7 +1,5 @@
-import User from '#models/customer'
-
 export default class Mail {
-  handle(user: User) {
+  handle(_user: { id: number }) {
     // Send email
   }
 }

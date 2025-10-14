@@ -1,5 +1,6 @@
 import { DateTime } from 'luxon'
 import { BaseModel, column } from '@adonisjs/lucid/orm'
+import { compose } from '@adonisjs/core/helpers'
 import { Searchable } from '@foadonis/magnify'
 
 export default class Event extends compose(BaseModel, Searchable) {
