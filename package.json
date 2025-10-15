@@ -9,6 +9,7 @@
     "build": "node ace build",
     "dev": "node ace serve --hmr",
     "dev2": "concurrently -n \"APP,MAILDEV\"  -c \"blue,green\" \"node ace serve --hmr\" \"maildev\"",
+    "vercel-build": "node scripts/build-static.mjs",
     "test": "node ace test",
     "lint": "eslint .",
     "format": "prettier --write .",
