@@ -1,10 +1,10 @@
 {
-  "outputDirectory": "build"
-}
-{
+  "outputDirectory": "build",
   "rewrites": [
     { "source": "/", "destination": "/static/index.html" },
-    { "source": "/:page(services|prices|articles|articles-detail|events|about|contact|signin|signup)", "destination": "/static/:page.html" }
+    {
+      "source": "/:page(services|prices|articles|articles-detail|events|about|contact|signin|signup)",
+      "destination": "/static/:page.html"
+    }
   ]
 }
-
