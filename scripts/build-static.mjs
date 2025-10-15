@@ -50,17 +50,13 @@ async function main() {
     throw new Error('resources/ directory not found')
   }
 
-  // Copy as-is into dist
-  await copyDir(staticDir, path.join(dist, 'static'))
+  // Copy HTML pages from static/ to the dist root so clean URLs work (e.g., /services -> services.html)
+  await copyDir(staticDir, dist)
+  // Keep resources under /resources for CSS/JS/images
   await copyDir(resourcesDir, path.join(dist, 'resources'))
-
-  // Optional: root redirect file for local testing
-  const indexRedirect = '<meta http-equiv="refresh" content="0; url=/static/index.html">\n'
-  await fs.writeFile(path.join(dist, 'index.html'), indexRedirect, 'utf8')
 }
 
 main().catch((err) => {
   console.error(err)
   process.exit(1)
 })
-

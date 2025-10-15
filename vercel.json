@@ -5,12 +5,5 @@
       "use": "@vercel/static-build",
       "config": { "distDir": "dist" }
     }
-  ],
-  "routes": [
-    { "src": "/resources/(.*)", "dest": "/resources/$1" },
-    { "src": "/static/(.*)", "dest": "/static/$1" },
-    { "src": "/", "dest": "/static/index.html" },
-    { "src": "/(services|prices|articles|articles-detail|events|about|contact|signin|signup)", "dest": "/static/$1.html" },
-    { "src": "/.*", "status": 404, "dest": "/static/404.html" }
   ]
 }
